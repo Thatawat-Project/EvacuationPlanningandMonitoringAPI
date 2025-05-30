@@ -1,0 +1,465 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "EvacuationPlanningandMonitoringAPI",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/evacuations/plan": {
+      "get": {
+        "tags": [
+          "Evacuations"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Evacuations"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EvacuationsPlanDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EvacuationsPlanDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EvacuationsPlanDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/evacuations/update": {
+      "put": {
+        "tags": [
+          "Evacuations"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EvacuationLogDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EvacuationLogDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EvacuationLogDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/evacuations/status": {
+      "get": {
+        "tags": [
+          "Evacuations"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/evacuations/clear": {
+      "delete": {
+        "tags": [
+          "Evacuations"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/evacuation-zones": {
+      "post": {
+        "tags": [
+          "EvacuationZones"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EvacuationZonesDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EvacuationZonesDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EvacuationZonesDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "EvacuationZones"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/evacuation-zones/{id}": {
+      "get": {
+        "tags": [
+          "EvacuationZones"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/vehicles": {
+      "get": {
+        "tags": [
+          "Vehicles"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Vehicles"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VehiclesDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VehiclesDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/VehiclesDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/vehicles/{id}": {
+      "get": {
+        "tags": [
+          "Vehicles"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "Vehicles"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VehiclesRedisUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VehiclesRedisUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/VehiclesRedisUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "EvacuationLogDto": {
+        "required": [
+          "evacuatedCount",
+          "evacuationTime",
+          "tripNumber",
+          "vehicleId",
+          "zoneId"
+        ],
+        "type": "object",
+        "properties": {
+          "zoneId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "vehicleId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "evacuatedCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "evacuationTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "tripNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status": {
+            "$ref": "#/components/schemas/ZoneStatus"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EvacuationZonesDto": {
+        "required": [
+          "latitude",
+          "longitude",
+          "nameZone",
+          "numberPeople",
+          "zoneId"
+        ],
+        "type": "object",
+        "properties": {
+          "zoneId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "nameZone": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "numberPeople": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "urgencyLevel": {
+            "maximum": 5,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "latitude": {
+            "type": "number",
+            "format": "double"
+          },
+          "longitude": {
+            "type": "number",
+            "format": "double"
+          },
+          "status": {
+            "$ref": "#/components/schemas/ZoneStatus"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EvacuationsPlanDto": {
+        "required": [
+          "evacuatedCount",
+          "evacuationTarget",
+          "tripNumber",
+          "vehicleId",
+          "zoneId"
+        ],
+        "type": "object",
+        "properties": {
+          "zoneId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "vehicleId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "evacuationTarget": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "tripNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "evacuatedCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status": {
+            "$ref": "#/components/schemas/ZoneStatus"
+          }
+        },
+        "additionalProperties": false
+      },
+      "VehiclesDto": {
+        "required": [
+          "capacity",
+          "latitude",
+          "longitude",
+          "speed",
+          "type",
+          "vehicleId"
+        ],
+        "type": "object",
+        "properties": {
+          "vehicleId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "capacity": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "type": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "speed": {
+            "type": "number",
+            "format": "double"
+          },
+          "latitude": {
+            "type": "number",
+            "format": "double"
+          },
+          "longitude": {
+            "type": "number",
+            "format": "double"
+          },
+          "status": {
+            "$ref": "#/components/schemas/VehiclesStatus"
+          }
+        },
+        "additionalProperties": false
+      },
+      "VehiclesRedisUpdateDto": {
+        "required": [
+          "latitude",
+          "longitude"
+        ],
+        "type": "object",
+        "properties": {
+          "latitude": {
+            "type": "number",
+            "format": "double"
+          },
+          "longitude": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "VehiclesStatus": {
+        "enum": [
+          "AVAILABLE",
+          "UNAVAILABLE"
+        ],
+        "type": "string"
+      },
+      "ZoneStatus": {
+        "enum": [
+          "ZONE_PENDING",
+          "ZONE_EVACUATING",
+          "ZONE_COMPLETED",
+          "ZONE_FAILED",
+          "ZONE_CANCELED"
+        ],
+        "type": "string"
+      }
+    }
+  }
+}

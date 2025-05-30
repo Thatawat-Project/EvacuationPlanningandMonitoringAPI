@@ -1,0 +1,169 @@
+[
+  {
+    "ContainingType": "EvacuationPlanningandMonitoringAPI.Controllers.EvacuationZonesController",
+    "Method": "Create",
+    "RelativePath": "api/evacuation-zones",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "EvacuationPlanningandMonitoringAPI.Models.DTOs.EvacuationZonesDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EvacuationPlanningandMonitoringAPI.Controllers.EvacuationZonesController",
+    "Method": "GetAllAsync",
+    "RelativePath": "api/evacuation-zones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EvacuationPlanningandMonitoringAPI.Controllers.EvacuationZonesController",
+    "Method": "GetByIdAsync",
+    "RelativePath": "api/evacuation-zones/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EvacuationPlanningandMonitoringAPI.Controllers.Api.EvacuationsController",
+    "Method": "ClearEvacuations",
+    "RelativePath": "api/evacuations/clear",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EvacuationPlanningandMonitoringAPI.Controllers.Api.EvacuationsController",
+    "Method": "GetAllPlanData",
+    "RelativePath": "api/evacuations/plan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EvacuationPlanningandMonitoringAPI.Controllers.Api.EvacuationsController",
+    "Method": "CreatePlan",
+    "RelativePath": "api/evacuations/plan",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Dto",
+        "Type": "EvacuationPlanningandMonitoringAPI.Models.DTOs.EvacuationsPlanDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EvacuationPlanningandMonitoringAPI.Controllers.Api.EvacuationsController",
+    "Method": "GetStatus",
+    "RelativePath": "api/evacuations/status",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EvacuationPlanningandMonitoringAPI.Controllers.Api.EvacuationsController",
+    "Method": "Update",
+    "RelativePath": "api/evacuations/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Dto",
+        "Type": "EvacuationPlanningandMonitoringAPI.Models.DTOs.EvacuationLogDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EvacuationPlanningandMonitoringAPI.Controllers.VehiclesController",
+    "Method": "GetAll",
+    "RelativePath": "api/vehicles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EvacuationPlanningandMonitoringAPI.Controllers.VehiclesController",
+    "Method": "Create",
+    "RelativePath": "api/vehicles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "EvacuationPlanningandMonitoringAPI.Models.DTOs.VehiclesDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EvacuationPlanningandMonitoringAPI.Controllers.VehiclesController",
+    "Method": "GetById",
+    "RelativePath": "api/vehicles/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EvacuationPlanningandMonitoringAPI.Controllers.VehiclesController",
+    "Method": "Update",
+    "RelativePath": "api/vehicles/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "EvacuationPlanningandMonitoringAPI.Models.DTOs.VehiclesRedisUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

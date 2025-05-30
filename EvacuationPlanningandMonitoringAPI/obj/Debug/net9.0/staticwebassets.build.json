@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "aVzIBiwpNekhOQ1lXhteXCA8aCV4ZOnAEU4gcxicZxo=",
+  "Source": "EvacuationPlanningandMonitoringAPI",
+  "BasePath": "_content/EvacuationPlanningandMonitoringAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

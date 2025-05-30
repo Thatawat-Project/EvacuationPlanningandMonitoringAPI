@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35913.81 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvacuationPlanningandMonitoringAPI", "EvacuationPlanningandMonitoringAPI\EvacuationPlanningandMonitoringAPI.csproj", "{12C7558C-23A3-44AD-837C-57A63F7A0B1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12C7558C-23A3-44AD-837C-57A63F7A0B1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12C7558C-23A3-44AD-837C-57A63F7A0B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12C7558C-23A3-44AD-837C-57A63F7A0B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12C7558C-23A3-44AD-837C-57A63F7A0B1F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD0656E7-EA7D-4502-92BD-15B6BC0B533D}
+	EndGlobalSection
+EndGlobal
