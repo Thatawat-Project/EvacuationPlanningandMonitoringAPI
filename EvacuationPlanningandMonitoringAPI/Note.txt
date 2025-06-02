@@ -1,1 +1,4 @@
 Scaffold-DbContext "Server=ILJIBEARz;Database=EvacuationPlanningandMonitoringDB;User ID=sa;Password=1234;Trusted_Connection=TRUE;encrypt=false;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models/Db -Force
+
+ var redisConnectionString = builder.Configuration.GetSection("Redis:ConnectionString").Value;
+    var configuration = ConfigurationOptions.Parse(redisConnectionString);

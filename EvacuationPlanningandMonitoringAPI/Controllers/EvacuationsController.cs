@@ -95,7 +95,7 @@ namespace EvacuationPlanningandMonitoringAPI.Controllers.Api
 
             var redisData = new RedisSyncData
             {
-                Key = GlobalConstants.RedisEvacuationsPlan + ":" + data.ZoneId + ":" + data.VehicleId,
+                Key = GlobalConstants.RedisEvacuationsPlan + ":" + data.ZoneId + ":" + data.VehicleId + ":" + data.Id.ToString(),
                 Value = jsonData,
                 UpdateTime = dateTime
             };

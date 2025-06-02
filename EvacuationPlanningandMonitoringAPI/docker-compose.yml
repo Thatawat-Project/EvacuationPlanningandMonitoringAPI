@@ -1,0 +1,17 @@
+﻿version: '1'
+
+services:
+  myapp:
+    image: web-api
+    ports:
+      - "8080:8080"
+
+  ngrok:
+    image: ngrok/ngrok:latest
+    command: http myapp:8080
+    depends_on:
+      - myapp
+    environment:
+      NGROK_AUTHTOKEN: 2xmRdSeE1eFPdRVrm1ilqVpLasv_ZQRunA6XEtU3Jd3zrFmD
+    ports:
+      - "4040:4040"

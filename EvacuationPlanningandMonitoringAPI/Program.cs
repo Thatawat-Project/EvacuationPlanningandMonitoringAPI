@@ -1,4 +1,5 @@
 ﻿using System.Text.Json.Serialization;
+using EvacuationPlanningandMonitoringAPI.Helpers;
 using EvacuationPlanningandMonitoringAPI.Models.Db;
 using EvacuationPlanningandMonitoringAPI.Repositories;
 using EvacuationPlanningandMonitoringAPI.Repositories.Interface;
@@ -12,7 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+//builder.WebHost.UseUrls("http://0.0.0.0:8080");
 builder.Services.AddControllers().AddJsonOptions(options =>
 {
     options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
@@ -52,11 +53,13 @@ builder.Services.AddHostedService<RedisToDbSyncService>();
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseMiddleware<ErrorHandlingMiddleware>();
+
+app.UseSwagger();
+app.UseSwaggerUI();
+//if (app.Environment.IsDevelopment())
+//{
+//}
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
