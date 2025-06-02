@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\thata\\OneDrive\\Documents\\EvacuationPlanningandMonitoringAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{12C7558C-23A3-44AD-837C-57A63F7A0B1F}|EvacuationPlanningandMonitoringAPI\\EvacuationPlanningandMonitoringAPI.csproj|c:\\users\\thata\\onedrive\\documents\\evacuationplanningandmonitoringapi\\evacuationplanningandmonitoringapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{12C7558C-23A3-44AD-837C-57A63F7A0B1F}|EvacuationPlanningandMonitoringAPI\\EvacuationPlanningandMonitoringAPI.csproj|solutionrelative:evacuationplanningandmonitoringapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12C7558C-23A3-44AD-837C-57A63F7A0B1F}|EvacuationPlanningandMonitoringAPI\\EvacuationPlanningandMonitoringAPI.csproj|c:\\users\\thata\\onedrive\\documents\\evacuationplanningandmonitoringapi\\evacuationplanningandmonitoringapi\\entrypoint.sh||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{12C7558C-23A3-44AD-837C-57A63F7A0B1F}|EvacuationPlanningandMonitoringAPI\\EvacuationPlanningandMonitoringAPI.csproj|solutionrelative:evacuationplanningandmonitoringapi\\entrypoint.sh||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12C7558C-23A3-44AD-837C-57A63F7A0B1F}|EvacuationPlanningandMonitoringAPI\\EvacuationPlanningandMonitoringAPI.csproj|c:\\users\\thata\\onedrive\\documents\\evacuationplanningandmonitoringapi\\evacuationplanningandmonitoringapi\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{12C7558C-23A3-44AD-837C-57A63F7A0B1F}|EvacuationPlanningandMonitoringAPI\\EvacuationPlanningandMonitoringAPI.csproj|solutionrelative:evacuationplanningandmonitoringapi\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\thata\\OneDrive\\Documents\\EvacuationPlanningandMonitoringAPI\\EvacuationPlanningandMonitoringAPI\\docker-compose.yml",
+              "RelativeDocumentMoniker": "EvacuationPlanningandMonitoringAPI\\docker-compose.yml",
+              "ToolTip": "C:\\Users\\thata\\OneDrive\\Documents\\EvacuationPlanningandMonitoringAPI\\EvacuationPlanningandMonitoringAPI\\docker-compose.yml",
+              "RelativeToolTip": "EvacuationPlanningandMonitoringAPI\\docker-compose.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-06-02T11:31:27.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\thata\\OneDrive\\Documents\\EvacuationPlanningandMonitoringAPI\\EvacuationPlanningandMonitoringAPI\\Dockerfile",
+              "RelativeDocumentMoniker": "EvacuationPlanningandMonitoringAPI\\Dockerfile",
+              "ToolTip": "C:\\Users\\thata\\OneDrive\\Documents\\EvacuationPlanningandMonitoringAPI\\EvacuationPlanningandMonitoringAPI\\Dockerfile",
+              "RelativeToolTip": "EvacuationPlanningandMonitoringAPI\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-02T11:28:00.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "entrypoint.sh",
+              "DocumentMoniker": "C:\\Users\\thata\\OneDrive\\Documents\\EvacuationPlanningandMonitoringAPI\\EvacuationPlanningandMonitoringAPI\\entrypoint.sh",
+              "RelativeDocumentMoniker": "EvacuationPlanningandMonitoringAPI\\entrypoint.sh",
+              "ToolTip": "C:\\Users\\thata\\OneDrive\\Documents\\EvacuationPlanningandMonitoringAPI\\EvacuationPlanningandMonitoringAPI\\entrypoint.sh",
+              "RelativeToolTip": "EvacuationPlanningandMonitoringAPI\\entrypoint.sh",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-02T11:25:39.704Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
